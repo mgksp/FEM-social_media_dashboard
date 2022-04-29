@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.themeBackground {
+  @apply bg-lightTheme-background dark:bg-darkTheme-background;
+}
+
+.themeText1 {
+  @apply text-lightTheme-txt1 dark:text-darkTheme-txt1;
+}
+
+.themeText2 {
+  @apply text-lightTheme-txt2 dark:text-darkTheme-txt2;
+}
+
+.themeCardBg {
+  @apply bg-lightTheme-cardBg dark:bg-darkTheme-cardBg;
+}
+
+.themeTopBgPattern {
+  @apply bg-lightTheme-topBgPattern dark:bg-darkTheme-topBgPattern;
+}
+
+.themeToggleBg {
+  @apply bg-lightTheme-toggle dark:bg-gradient-to-r dark:from-darkTheme-toggle-from dark:to-darkTheme-toggle-to;
+}
