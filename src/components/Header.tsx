@@ -32,13 +32,13 @@ export default function Header({ setDarkMode, darkMode }: HeaderProps) {
             type="checkbox"
             id="dk-mode"
           />
-          <div
+          <span
             className={
               darkMode
-                ? "absolute top-1/2 left-[2px] -translate-y-1/2 h-5 aspect-square rounded-full themeBackground transition-transform duration-700"
-                : "absolute top-1/2 -translate-y-1/2 translate-x-[18px] h-5 aspect-square rounded-full themeBackground transition-transform duration-700"
+                ? "absolute block top-1/2 left-[2px] -translate-y-1/2 h-5 aspect-square rounded-full themeBackground transition-transform duration-700"
+                : "absolute block top-1/2 -translate-y-1/2 translate-x-[18px] h-5 aspect-square rounded-full themeBackground transition-transform duration-700"
             }
-          ></div>
+          ></span>
         </label>
       </div>
     </div>
