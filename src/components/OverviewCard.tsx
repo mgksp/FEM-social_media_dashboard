@@ -22,7 +22,7 @@ export default function OverviewCard({
         {icon}
       </div>
       <div className="flex justify-between items-baseline font-bold">
-        <h3 className="text-[3rem] leading-none">{count}</h3>
+        <h3 className="text-[2rem] leading-none">{count}</h3>
         <div
           className={
             trendUp
