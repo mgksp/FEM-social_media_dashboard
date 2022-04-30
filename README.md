@@ -3,7 +3,7 @@
 ### Links
 
 [Challenge from FrontendMentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H)\
-[Live site here]()
+[Live site here](https://mgksp-fem-social-media-dashboard.netlify.app/)
 
 ### Screenshots
 
