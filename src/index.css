@@ -18,6 +18,10 @@
   @apply bg-lightTheme-cardBg dark:bg-darkTheme-cardBg;
 }
 
+.themeCardHoverBg {
+  @apply hover:bg-lightTheme-cardHoverBg dark:hover:bg-darkTheme-cardHoverBg;
+}
+
 .themeTopBgPattern {
   @apply bg-lightTheme-topBgPattern dark:bg-darkTheme-topBgPattern;
 }

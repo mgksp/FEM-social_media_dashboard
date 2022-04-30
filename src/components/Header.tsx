@@ -1,9 +1,17 @@
+import React from "react";
+
 interface HeaderProps {
   setDarkMode: Function;
   darkMode: Boolean;
 }
 
 export default function Header({ setDarkMode, darkMode }: HeaderProps) {
+  const handleThemeChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
+    const theme: Boolean = evt.currentTarget.checked;
+    localStorage.setItem("darkTheme", theme.toString());
+    setDarkMode(theme);
+  };
+
   return (
     <div className="flex flex-col md:flex-row md:items-start md:justify-between">
       <div className="pb-6 mb-4 border-b border-gray-500 font-bold z-50 md:border-0">
@@ -18,7 +26,8 @@ export default function Header({ setDarkMode, darkMode }: HeaderProps) {
           htmlFor="dk-mode"
         >
           <input
-            onChange={(evt) => setDarkMode(evt.target.checked)}
+            onChange={handleThemeChange}
+            checked={darkMode ? true : false}
             className="invisible"
             type="checkbox"
             id="dk-mode"

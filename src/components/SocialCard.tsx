@@ -20,7 +20,7 @@ export default function SocialCard({
   borderColor,
 }: SocialCardProps) {
   return (
-    <div className="relative z-50 rounded overflow-hidden p-6 themeCardBg grid gap-7 place-items-center">
+    <div className="relative z-50 rounded overflow-hidden p-6 themeCardBg grid gap-7 place-items-center cursor-pointer themeCardHoverBg">
       <div className={`absolute h-1 w-full inset-0 ${borderColor}`}></div>
       <div className="flex gap-2 items-center">
         {icon}

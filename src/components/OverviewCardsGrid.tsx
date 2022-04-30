@@ -9,7 +9,7 @@ export default function OverviewCardsGrid() {
   return (
     <>
       <h2 className="text-2xl mb-8 font-bold">Overview Today</h2>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
         <OverviewCard
           title={"Page Views"}
           count={"87"}

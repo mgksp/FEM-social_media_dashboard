@@ -1,8 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SocialCardsGrid, OverviewCardsGrid, Header } from "./components";
 
 function App() {
   const [darkMode, setDarkMode] = useState<Boolean>(false);
+
+  useEffect(() => {
+    const darkTheme = localStorage.getItem("darkTheme");
+    if (darkTheme) {
+      setDarkMode(darkTheme === "true");
+    } else {
+      const prefersDark: Boolean = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      setDarkMode(prefersDark);
+    }
+  }, []);
 
   return (
     <div className={darkMode ? "dark" : ""}>

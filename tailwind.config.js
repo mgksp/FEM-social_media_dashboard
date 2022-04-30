@@ -19,6 +19,7 @@ module.exports = {
           background: "hsl(230, 17%, 14%)",
           topBgPattern: "hsl(232, 19%, 15%)",
           cardBg: "hsl(228, 28%, 20%)",
+          cardHoverBg: "hsl(228, 26%, 27%)",
           txt1: "hsl(0, 0%, 100%)",
           txt2: "hsl(228, 34%, 66%)",
           toggle: {
@@ -31,6 +32,7 @@ module.exports = {
           background: "hsl(0, 0%, 100%)",
           topBgPattern: "hsl(225, 100%, 98%)",
           cardBg: "hsl(227, 47%, 96%)",
+          cardHoverBg: "hsl(232, 33%, 91%)",
           txt1: "hsl(230, 17%, 14%)",
           txt2: "hsl(228, 12%, 44%)",
           toggle: "hsl(230, 22%, 74%)",

@@ -16,8 +16,8 @@ export default function OverviewCard({
   trendUp,
 }: OverviewCardProps) {
   return (
-    <div className="px-6 py-7 themeCardBg rounded">
-      <div className="flex justify-between items-center mb-5">
+    <div className="px-6 py-7 themeCardBg themeCardHoverBg rounded cursor-pointer md:py-6">
+      <div className="flex justify-between items-center mb-5 md:mb-6">
         <p className="themeText2 font-bold text-sm">{title}</p>
         {icon}
       </div>
